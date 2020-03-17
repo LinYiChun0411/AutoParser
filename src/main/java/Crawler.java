@@ -5,10 +5,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public  class Crawler {
     private WebDriver driver;
-    private String URL;
-    public Crawler(WebDriver driver,String URL) {
+    public Crawler(WebDriver driver, String URL) {
         this.driver = driver;
-        driver.get(URL);
+        this.driver.get(URL);
     }
     public WebDriver getDriver() {
         WebDriverWait wait = new WebDriverWait(this.driver, 6000);
